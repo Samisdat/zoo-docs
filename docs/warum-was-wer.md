@@ -1,200 +1,64 @@
 ---
-id: doc1
-title: Style Guide
-sidebar_label: Style Guide
+id: warum-was-wer
+title: Warum & Was & Wer
 ---
 
-You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).
+## Was
 
-## Markdown Syntax
+Das hier soll in einer App für den Wuppertaler Zoo enden.
+Oder besser in zwei Apps: 
 
-To serve as an example page when styling markdown based Docusaurus sites.
+* Eine iPhone App
+* Eine WebApp
 
-## Headers
+Beide Apps bekommen ihre Daten über dieselbe API.
 
-# H1 - Create the best documentation
+## Warum
 
-## H2 - Create the best documentation
+Ich will zwei neue Sachen lernen: 
 
-### H3 - Create the best documentation
+* Eine iOS App in Swift schreiben
+* Eine WebApp mit React (oder Vue oder Svelte ) zusammenstricken
 
-#### H4 - Create the best documentation
+Ich habe noch nie gut Sachen mit "Hello World" Tutorials gelernt, 
+ich brauche ein interessantes Problem, dass ich verstehe.
 
-##### H5 - Create the best documentation
+Daher kam ich auf die Idee mit der Zoo-App:
 
-###### H6 - Create the best documentation
+Jeden Samstag gehe ich mit meiner Tochter in den Wuppertaler Zoo.<br/>
+Da kenne ich mich aus, es gibt keine App und ich hätte gerne eine.
 
----
+Und da gibt es viele interessante Aspekte:
 
-## Emphasis
+* Navigation zwischen den Gehegen
+* Indoor-Navigation in den Häusern
+* Zuordnung von aktueller Position zu Tieren
 
-Emphasis, aka italics, with *asterisks* or _underscores_.
+Außerdem scheint das Problem handlebar:
 
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
+2018 kamen laut [Kulturbericht der Stadt Wuppertal](https://www.wuppertal.de/vv/produkte/200/102370100000358034.php) 571.926 Gäste in den Wuppertaler Zoo.<br/>  
+Leider geht aus dem Bericht nicht hervor, wieviel *Unique Visitors* das waren.
+Ich war 2018 ungefähr 50mal im Zoo, tauche ich in der Zahl der Stadt einmal oder fünfzigmal auf?
 
-Combined emphasis with **asterisks and _underscores_**.
+Aber den groben Daumen reicht es.
 
-Strikethrough uses two tildes. ~~Scratch this.~~
+1. Ich nehme mal eine halbe Millionen Zoobesuche an.
+2. Es würde mich sehr wundern, wenn mehr als 10% der BesucherInnen überhaupt eine App benutzen würden.
+3. In Deutschland hat iOS einen [Marktanteil](https://de.statista.com/statistik/daten/studie/256790/umfrage/marktanteile-von-android-und-ios-am-smartphone-absatz-in-deutschland/) von ca. 20%.
 
----
+Daraus ergibt sich:
 
-## Lists
+**50.000** potenzielle App NutzerInnen<br/>
+**10.000** davon haben iOS<br/>
+**40.000** könnten eine WebApp nutzen<br/>
 
-1. First ordered list item
-1. Another item
-   - Unordered sub-list.
-1. Actual numbers don't matter, just that it's a number
-   1. Ordered sub-list
-1. And another item.
+50.000 / 365 Tage / 8 Stunden Öffnungszeit ergibt unter **20** NutzerInnen die Stunde, die auf der Webapp oder einer API aufschlagen.
+ 
+Selbst wenn ich in der Mittagszeit an einem sonnigen Pfingstsonntag um den Factor 100 daneben liegen sollte, dann wären es **2000** NutzerInnen pro Stunde.
+Das müßte mein Hetzner-Server abkönnen.
 
-* Unordered list can use asterisks
+## Wer
 
-- Or minuses
+Das hier ist eine reines Spaß und Lern Projekt.
 
-+ Or pluses
-
----
-
-## Links
-
-[I'm an inline-style link](https://www.google.com/)
-
-[I'm an inline-style link with title](https://www.google.com/ "Google's Homepage")
-
-[I'm a reference-style link][arbitrary case-insensitive reference text]
-
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
-
-[You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself].
-
-URLs and URLs in angle brackets will automatically get turned into links. http://www.example.com/ or <http://www.example.com/> and sometimes example.com (but not on GitHub, for example).
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.mozilla.org/
-[1]: http://slashdot.org/
-[link text itself]: http://www.reddit.com/
-
----
-
-## Images
-
-Here's our logo (hover to see the title text):
-
-Inline-style: ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 'Logo Title Text 1')
-
-Reference-style: ![alt text][logo]
-
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 'Logo Title Text 2'
-
----
-
-## Code
-
-```javascript
-var s = 'JavaScript syntax highlighting';
-alert(s);
-```
-
-```python
-s = "Python syntax highlighting"
-print(s)
-```
-
-```
-No language indicated, so no syntax highlighting.
-But let's throw in a <b>tag</b>.
-```
-
-```js {2}
-function highlightMe() {
-  console.log('This line can be highlighted!');
-}
-```
-
----
-
-## Tables
-
-Colons can be used to align columns.
-
-| Tables        |      Are      |   Cool |
-| ------------- | :-----------: | -----: |
-| col 3 is      | right-aligned | \$1600 |
-| col 2 is      |   centered    |   \$12 |
-| zebra stripes |   are neat    |    \$1 |
-
-There must be at least 3 dashes separating each header cell. The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.
-
-| Markdown | Less      | Pretty     |
-| -------- | --------- | ---------- |
-| _Still_  | `renders` | **nicely** |
-| 1        | 2         | 3          |
-
----
-
-## Blockquotes
-
-> Blockquotes are very handy in email to emulate reply text. This line is part of the same quote.
-
-Quote break.
-
-> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can _put_ **Markdown** into a blockquote.
-
----
-
-## Inline HTML
-
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
-
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl>
-
----
-
-## Line Breaks
-
-Here's a line for us to start with.
-
-This line is separated from the one above by two newlines, so it will be a _separate paragraph_.
-
-This line is also a separate paragraph, but... This line is only separated by a single newline, so it's a separate line in the _same paragraph_.
-
----
-
-## Admonitions
-
-:::note
-
-This is a note
-
-:::
-
-:::tip
-
-This is a tip
-
-:::
-
-:::important
-
-This is important
-
-:::
-
-:::caution
-
-This is a caution
-
-:::
-
-:::warning
-
-This is a warning
-
-:::
+Ich bin in keiner Weise durch den Zoo Wuppertal beauftrage.
