@@ -8,7 +8,7 @@ module.exports = {
   projectName: 'zoo-docu', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'App für den Zoo Wuppertal',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -22,7 +22,7 @@ module.exports = {
         },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/samisdat/zoo-docu',
           label: 'GitHub',
           position: 'right',
         },
@@ -48,16 +48,8 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/samisdat',
             },
           ],
         },
@@ -70,7 +62,7 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/samisdat/zoo-docu',
             },
           ],
         },
@@ -88,13 +80,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/samisdat/zoo-docu/edit/develop/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/samisdat/zoo-docu/edit/develop/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
