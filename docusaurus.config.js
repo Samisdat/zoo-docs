@@ -2,7 +2,7 @@ module.exports = {
   title: 'My Site',
   tagline: 'The tagline of my site',
   url: 'https://samisdat.github.io/',
-  baseUrl: '/zoo-docu',
+  baseUrl: '/zoo-docu/',
   favicon: 'img/favicon.ico',
   organizationName: 'samisdat', // Usually your GitHub org/user name.
   projectName: 'zoo-docu', // Usually your repo name.
